@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheert" href="registration_style.css">
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"> defer</script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200;300;400;500;600;700&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home Page</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<body bgcolor= "white">
+        <h1 style="background-color: skyblue;"><u><center><b>Registration Form</b></u></h1></center>
+    <form action="/action_page.php" method="get" target="_blank" onsubmit="return validateForm()" method="post" autocomplete="on">
+        <label for="fname"><b>First Name:</b></label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname"><b>Last Name:</b></label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+        <label for="number"><b>Mobile Number</b></label><br>
+        <input type="tel" id="number" name="number" placeholder="6345612334"><br><br>
+        <label for="email"><b>Email Id:</b></label><br>
+        <input type="email" id="email" name="email" size="30" placeholder="abcd@gmail.com" required><br><br>
+        <label for="age"><b>Age:</b></label><br>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="gender"><b>Gender:</b></label><br>
+        <input type="radio" id="gender" name="gender">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="female">
+        <label for="female">Female</label><br><br>
+        <label for="dob"><b>Date of Birth</b></label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+        <label for="college"><b>College:</b></label><br>
+        <input type="text" id="college" name="college" size="30">
+        <br>
+        <br>
+        <label for="year"><b>Year:</b></label>
+
+        <select name="year" id="year">
+        <option value="1">1st</option>
+        <option value="2">2nd</option>
+        <option value="3">3rd</option>
+        <option value="4">4th</option>
+        </select>
+        <br>
+        <br>
+        <label for="cgpa"><b>CGPA:</b></label><br>
+        <input type="text" id="cgpa" name="cgpa" size="10"><br>
+        <label for="semester"><b>Till Semester</b></label><br>
+        <input type="checkbox" id="semester" name="semester">
+        <label for="1 sem">1st semester</label>
+        <input type="checkbox" id="semester" name="semester">
+        <label for="1 sem">2nd semester</label>
+        <input type="checkbox" id="semester" name="semester">
+        <label for="1 sem">3rd semester</label>
+        <input type="checkbox" id="semester" name="semester">
+        <label for="1 sem">4th semester</label><br>
+        <input type="checkbox" id="semester" name="semester">
+        <label for="1 sem">5th semester</label>
+        <input type="checkbox" id="semester" name="semester">
+        <label for="1 sem">6th semester</label>
+        <input type="checkbox" id="semester" name="semester">
+        <label for="1 sem">7th semester</label>
+        <input type="checkbox" id="semester" name="semester">
+        <label for="1 sem">8th semester</label><br><br>
+
+        <input type="submit" value="Submit" formtarget="_blank">
+        <button type="button">Reset</button> <br><br>
+        <a href="homepage.html">homepage:-</a>
+
+      </form>  
+</body>
+</html>
